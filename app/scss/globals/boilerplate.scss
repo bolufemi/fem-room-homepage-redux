@@ -1,0 +1,26 @@
+@use '../util' as *;
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+body {
+    font-family: var(--font-spartan);
+}
+
+.container {
+    width: 375px;
+    height: 1538px;
+    position: relative;
+
+    @include breakpoint(medium) {
+        width: 1440px;
+        height: 800px;
+    }
+}

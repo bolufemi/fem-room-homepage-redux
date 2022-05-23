@@ -1,0 +1,37 @@
+@use '../util' as *;
+
+.features {
+    margin-top: 70px;
+
+    @include breakpoint(medium) {
+        display: flex;
+        align-items: center;
+        margin-top: 172px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;    
+    }
+}
+.about__text {
+    margin: 60px 34px 60px 34px;
+
+    @include breakpoint(medium) {
+        margin-left: 50px;
+    }
+
+    h2 {
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 5px;    
+    }
+
+    p {
+        line-height: 20px;
+        font-size: 0.75rem;
+        color: hsl(0, 0%, 63%);  
+        margin-top: 14px;   
+    }
+}

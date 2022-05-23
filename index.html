@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->  
+  <title>Frontend Mentor | Room homepage</title>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap" rel="stylesheet">   
+  <link rel="stylesheet" href="/dist/style.css">
+  <script defer src="/dist/script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="intro" id="first__slide">
+        <div class="images fade">
+            <picture>
+                <source media="(min-width: 43em)" srcset="./images/desktop-image-hero-1.jpg">
+                <img src="./images/mobile-image-hero-1.jpg">
+            </picture>
+        </div>
+        <article>
+            <h1>Discover innovative ways to decorate</h1>
+            <p>We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.</p>
+            <div class="shop">
+                <h2>shop now</h2>
+                <img src="./images/icon-arrow.svg">
+            </div>
+        </article>   
+    </div>
+    <div class="intro" id="second__slide">
+        <div class="images fade">
+            <picture>
+                <source media="(min-width: 43em)" srcset="./images/desktop-image-hero-2.jpg">
+                <img src="./images/mobile-image-hero-2.jpg">
+            </picture>
+        </div>
+        <article>
+            <h1>We are available all across the globe </h1>
+            <p> With stores all over the world, it's easy for you to find furniture for your home or place of business. Locally, we’re in most major cities throughout the country. Find the branch nearest you using our store locator. Any questions? Don't hesitate to contact us today. </p>
+            <div class="shop">
+                <h2>shop now</h2>
+                <img src="./images/icon-arrow.svg">
+            </div>
+        </article>   
+    </div>
+    <div class="intro" id="third__slide">
+        <div class="images fade">
+            <picture>
+                <source media="(min-width: 43em)" srcset="./images/desktop-image-hero-3.jpg">
+                <img src="./images/mobile-image-hero-3.jpg">
+            </picture>
+        </div>
+        <article>
+            <h1>Manufactured with the best materials</h1>
+            <p>Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office.</p>
+            <div class="shop">
+                <h2>shop now</h2>
+                <img src="./images/icon-arrow.svg">
+            </div>
+        </article>   
+    </div>
+    <nav>
+        <div class="menu">
+            <input type="checkbox" class="toggler">
+            <ul class="menu-links">
+                <li><a class="menu-link" href="#">home</a></li>
+                <li><a class="menu-link" href="#">shop</a></li>
+                <li><a class="menu-link" href="#">about</a></li>
+                <li><a class="menu-link" href="#">contact</a></li>
+            </ul>
+        </div>
+        <div class="logo">
+            <h3>room</h3>
+        </div>
+        <div class="overlay"></div>
+    </nav> 
+    <div class="toggle">
+        <div class="prev" onclick="nextImage('prev')"><img src="./images/icon-left.svg"></div>
+        <div class="next" onclick="nextImage('next')"><img src="./images/icon-right.svg"></div>
+    </div>
+    <div class="features">
+        <img src="./images/image-about-dark.jpg">
+        <div class="about__text">
+            <h2>about our furniture</h2>
+            <p> Our multifunctional collection blends design and function to suit your individual taste. Make each room unique, or pick a cohesive theme that best express your interests and what inspires you. Find the furniture pieces you need, from traditional to contemporary styles or anything in between. Product specialists are available to help you create your dream space. </p>
+        </div>
+        <img src="./images/image-about-light.jpg">
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

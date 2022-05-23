@@ -1,0 +1,121 @@
+@use '../util' as *;
+
+#second__slide, #third__slide {
+    display: none;
+}
+.images {
+    height: 360px;
+}
+.intro {
+    article {
+        margin: 56px 34px 0px 34px;
+
+        @include breakpoint(medium) {
+            position: absolute;
+            top: 100px;
+            left: 940px;
+            margin: 0 70px 0 0;
+        }
+
+        h1 {
+            font-size: 1.75rem;
+            font-weight: 700;  
+            
+            @include breakpoint(medium) {
+                font-size: 2.125rem;
+                margin-bottom: 20px;        
+            }
+        }
+
+        p {
+            line-height: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: hsl(0, 0%, 63%);  
+            margin-top: 14px;      
+        }
+    }
+}
+.toggle {
+    position: absolute;
+    display: flex;
+    top: 302px;
+    left: 271px;
+
+    @include breakpoint(medium) {
+        top: 446px;
+        left: 840px; 
+    }
+}
+.prev, .next {
+    background-color: black;
+    padding: 1rem;
+    cursor: pointer;
+
+    @include breakpoint(medium) {
+        padding: 1.625rem;
+    }
+}
+.prev img, .next img {
+    height: 20px;
+    width: 20px;
+    filter: brightness(0) invert(1);
+
+    @include breakpoint(medium) {
+        height: 30px;
+        width: 30px;
+    }
+}
+.prev:hover, .next:hover {
+    background-color: hsl(0, 0%, 27%);
+}
+.shop {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    margin-top: 45px;
+    cursor: pointer;
+
+    @include breakpoint(medium) {
+        margin-top: 20px;
+    }
+
+    h2 {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 8px;    
+        font-weight: 600;
+
+        @include breakpoint(medium) {
+            font-size: 0.8rem;
+        }
+    }
+
+    &:hover {
+        color: hsl(0, 0%, 63%);
+    }
+}
+
+/* fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
